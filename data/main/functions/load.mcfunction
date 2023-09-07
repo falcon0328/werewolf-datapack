@@ -19,6 +19,5 @@ gamerule doInsomnia false
 # クリーパーやガスト等のMobがブロックに変更を加えられないようにする
 gamerule mobGriefing false
 
-# 経過日数の管理を行う
-scoreboard objectives add day_count dummy
-scoreboard players set @a day_count 1 
+# 前回のゲームの情報が残っていることがあるためリセットを行う
+function game:reset
