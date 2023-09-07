@@ -8,4 +8,4 @@ execute if score @p day_timer_count matches 1.. run scoreboard players remove @p
 # タイマーの値をボスバーの値と同期させる
 execute store result bossbar day_timer_bossbar value run scoreboard players get @p day_timer_count
 # タイマーの値が0になった際にタイマー終了のスクリプトを実行させる
-execute if score @p day_timer_count matches 0 run function day_timer:stop_timer
+execute if score @p day_timer_count matches 0 run function day_timer:stop
