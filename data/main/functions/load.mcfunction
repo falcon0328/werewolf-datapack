@@ -20,5 +20,5 @@ gamerule doInsomnia false
 gamerule mobGriefing false
 
 # 経過日数の管理を行う
-scoreboard objectives add dayCount dummy
-scoreboard players set @a dayCount 1 
+scoreboard objectives add day_count dummy
+scoreboard players set @a day_count 1 
