@@ -18,3 +18,7 @@ gamerule doMobSpawning false
 gamerule doInsomnia false
 # クリーパーやガスト等のMobがブロックに変更を加えられないようにする
 gamerule mobGriefing false
+
+# 経過日数の管理を行う
+scoreboard objectives add dayCount dummy
+scoreboard players set @a dayCount 1 

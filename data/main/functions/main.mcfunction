@@ -1,1 +1,1 @@
-function game:exec_timer
+function day_timer:exec_timer
