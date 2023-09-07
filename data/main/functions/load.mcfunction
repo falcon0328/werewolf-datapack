@@ -7,13 +7,14 @@ gamerule showDeathMessages false
 # ゲームモード設定
 gamemode adventure
 # ゲーム難易度
-difficulty peaceful
+difficulty easy
 # 昼にする
 time set day
 # 天気のサイクルを停止して晴れに固定する
-weather clear
 gamerule doWeatherCycle false
+weather clear
+# モブがスポーンしないようにする
+gamerule doMobSpawning false
+gamerule doInsomnia false
 # クリーパーやガスト等のMobがブロックに変更を加えられないようにする
 gamerule mobGriefing false
-# ファントムがスポーンしないようにする
-gamerule doInsomnia false
