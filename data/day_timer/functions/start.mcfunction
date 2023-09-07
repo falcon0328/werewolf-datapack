@@ -1,4 +1,8 @@
 # タイマーとボスバーの追加処理を行う
+
+# 時刻設定を昼にする
+time set day
+
 # BOSSバーの初期設定を行う 
 bossbar add day_timer_bossbar [{"score":{"name":"@a","objective":"day_count"},"bold":true},{"text":"日目","bold":true},{"text":" 昼"}]
 bossbar set day_timer_bossbar players @a
