@@ -1,6 +1,9 @@
 # 時刻を昼に戻す
 time set day
 
+# タイトルをクリアする
+title @a clear
+
 # 各変数を削除する
 scoreboard objectives remove day_count
 scoreboard objectives remove day_timer_count
