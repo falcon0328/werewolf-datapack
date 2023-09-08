@@ -23,4 +23,6 @@ gamerule mobGriefing false
 function game:reset
 
 # 乱数用スコアボードの追加
-scoreboard objectives add rng dummy
+scoreboard objectives add rand dummy
+scoreboard objectives add rand_range dummy
+scoreboard objectives add rand_appendix dummy
