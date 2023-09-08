@@ -3,6 +3,10 @@
 # 時刻設定を夜にする
 time set night
 
+# 全プレイヤーの画面にN日目と表示する
+title @a subtitle [{"text": "- ", "color":"gold"},{"score":{"name":"*","objective":"day_count"}, "color":"gold"},{"text": "日目", "color":"gold"},{"text": " -", "color":"gold"}]
+title @a title [{"text": "☽ ","color":"yellow"},{"text": "夜","color":"blue"},{"text": " ☽","color":"yellow"}]
+
 # BOSSバーの初期設定を行う 
 bossbar add night_timer_bossbar [{"score":{"name":"@a","objective":"day_count"},"bold":true},{"text":"日目","bold":true},{"text":" 夜"}]
 bossbar set night_timer_bossbar players @a
