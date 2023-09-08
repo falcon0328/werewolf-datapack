@@ -21,3 +21,6 @@ gamerule mobGriefing false
 
 # 前回のゲームの情報が残っていることがあるためリセットを行う
 function game:reset
+
+# 乱数用スコアボードの追加
+scoreboard objectives add rng dummy
