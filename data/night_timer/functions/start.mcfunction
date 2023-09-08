@@ -1,7 +1,7 @@
 # タイマーとボスバーの追加処理を行う
 
-# 時刻設定を夜にする
-time set night
+# 時刻設定を深夜にする
+time set midnight
 
 # 全プレイヤーの画面にN日目と表示する
 title @a subtitle [{"text": "- ", "color":"gold"},{"score":{"name":"*","objective":"day_count"}, "color":"gold"},{"text": "日目", "color":"gold"},{"text": " -", "color":"gold"}]
