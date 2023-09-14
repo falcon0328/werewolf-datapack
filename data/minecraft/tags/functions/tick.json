@@ -1,5 +1,5 @@
 {
   "values": [
-    "main:main","rand:tick","day_timer:tick","night_timer:tick"
+    "rand:tick","day_timer:tick","night_timer:tick"
  ]
 }
