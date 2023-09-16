@@ -16,6 +16,6 @@ bossbar set night_timer_bossbar style notched_6
 
 # タイマー用の変数管理を行う
 scoreboard objectives add night_timer_count dummy
-scoreboard players set @a night_timer_count 600
+scoreboard players set @e[type=minecraft:armor_stand,nbt={Tags:["game_manager"]},limit=1] night_timer_count 600
 scoreboard objectives add is_end_night_timer dummy
-scoreboard players set @a is_end_night_timer 0
+scoreboard players set @e[type=minecraft:armor_stand,nbt={Tags:["game_manager"]},limit=1] is_end_night_timer 0

@@ -1,7 +1,7 @@
 # タイマーを停止する処理
 
 # タイマーの終了フラグを立てる
-scoreboard players set @a is_end_night_timer 1
+scoreboard players set @e[type=minecraft:armor_stand,nbt={Tags:["game_manager"]},limit=1] is_end_night_timer 1
 
 # 日数をインクリメントする
 scoreboard players add @a day_count 1
