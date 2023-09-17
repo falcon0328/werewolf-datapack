@@ -1,5 +1,5 @@
 {
   "values": [
-    "rand:tick","day_timer:tick","night_timer:tick"
+    "game:tick","rand:tick","day_timer:tick","night_timer:tick"
  ]
 }
