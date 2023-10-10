@@ -3,6 +3,11 @@
 
 scoreboard objectives add roles dummy "役職情報"
 
+# プレイヤーIDを設定する
+# 人数をカウントするのが目的
+function players:assign
+
+# プレイヤー人数毎にデフォルト設定を読み込む
 execute if score players game_info matches 4 run function roles:set_default_4
 execute if score players game_info matches 5 run function roles:set_default_5
 execute if score players game_info matches 6 run function roles:set_default_6
