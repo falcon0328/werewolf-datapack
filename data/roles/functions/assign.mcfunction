@@ -1,5 +1,3 @@
-# 役職情報を管理するテーブルを用意する
-scoreboard objectives add role dummy
 # 役職ごとのIDを用意する
 scoreboard objectives add role_id dummy
 
