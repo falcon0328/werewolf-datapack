@@ -23,5 +23,6 @@ team modify werewolf deathMessageVisibility never
 # 最初に全員を村人としてIDを設定し、その後各役職を選定する
 # 0: 村人、1: 人狼、2: 占い師、3: 狂人、4: 霊媒師
 scoreboard players set @e[scores={id=0..}] role_id 0
-# プレイヤーIDの存在する全エンティティに役職を割り当てる
+
+# プレイヤーIDの存在する全エンティティに役職の内容を割り当てる
 execute as @e[scores={id=0..}] run function roles:assign_job
