@@ -36,3 +36,6 @@ execute if score reibai roles matches 1.. run scoreboard players set @e[scores={
 
 # プレイヤーIDの存在する全エンティティに役職の内容を割り当てる
 execute as @e[scores={id=0..}] run function roles:assign_job
+
+# 役職人数表を表示する
+function roles:setdisplay_sidebar
