@@ -25,6 +25,8 @@ team modify werewolf deathMessageVisibility never
 scoreboard players set @e[scores={id=0..}] role_id 0
 
 # 人狼のID割当
+# 人狼のみ人数が未確定であり、条件分岐が複数になるため別関数として切り出している
+execute if score werewolf roles matches 1.. run function roles:assign_werewolf
 # 占い師のID割当
 execute if score uranai roles matches 1.. run scoreboard players set @e[scores={id=0..,role_id=0},sort=random,limit=1] role_id 2
 # 狂人のID割当
