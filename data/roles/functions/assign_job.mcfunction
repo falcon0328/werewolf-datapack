@@ -1,3 +1,9 @@
+# 役職割当時の共通処理
+# このスクリプトは@sのターゲットセレクタが指定できることを前提にしている
+
+# 持ち物を初期化する
+clear @s
+
 # 役職IDごとに設定する内容が異なるため分岐処理を行っている
 # 0: 村人、1: 人狼、2: 占い師、3: 狂人、4: 霊媒師
 execute if score @s role_id matches 0 run function roles:assign_job_00_villager
