@@ -24,5 +24,13 @@ team modify werewolf deathMessageVisibility never
 # 0: 村人、1: 人狼、2: 占い師、3: 狂人、4: 霊媒師
 scoreboard players set @e[scores={id=0..}] role_id 0
 
+# 人狼のID割当
+# 占い師のID割当
+execute if score uranai roles matches 1.. run scoreboard players set @e[scores={id=0..,role_id=0},sort=random,limit=1] role_id 2
+# 狂人のID割当
+execute if score kyojin roles matches 1.. run scoreboard players set @e[scores={id=0..,role_id=0},sort=random,limit=1] role_id 3
+# 霊媒師のID割当
+execute if score reibai roles matches 1.. run scoreboard players set @e[scores={id=0..,role_id=0},sort=random,limit=1] role_id 4
+
 # プレイヤーIDの存在する全エンティティに役職の内容を割り当てる
 execute as @e[scores={id=0..}] run function roles:assign_job
