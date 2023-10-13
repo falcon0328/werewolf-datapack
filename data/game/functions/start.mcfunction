@@ -1,5 +1,9 @@
 # マイクラ人狼RPG ゲーム開始スクリプト 
 
+# プレイヤーID・役職の割当を行う
+function players:assign
+function roles:assign
+
 # ゲーム管理用のアーマースタンドを召喚する
 kill @e[type=minecraft:armor_stand,nbt={Tags:["game_manager"]}]
 summon minecraft:armor_stand ~ ~ ~ {Marker:true,Invisible:true,NoGravity:true,Tags:["game_manager"]}
