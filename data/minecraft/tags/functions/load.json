@@ -1,5 +1,5 @@
 {
   "values": [
-    "game:load","rand:load"
+    "game:load","rand:load","roles:load"
  ]
 }
