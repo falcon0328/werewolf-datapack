@@ -2,7 +2,7 @@
 # プレイヤー数が確定した後に呼び出す前提のロジック
 
 scoreboard objectives remove roles
-scoreboard objectives add roles dummy "役職情報"
+scoreboard objectives add roles dummy
 
 # プレイヤーIDを設定する
 # 人数をカウントするのが目的
