@@ -4,6 +4,9 @@ time set day
 # タイトルをクリアする
 title @a clear
 
+# ゲーム管理用の防具立てを削除する
+kill @e[type=armor_stand,nbt={Tags: ["game_manager"]}]
+
 # 各変数を削除する
 scoreboard objectives remove day_count
 scoreboard objectives remove day_timer_count
