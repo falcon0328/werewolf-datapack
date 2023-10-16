@@ -6,3 +6,6 @@ team join villager
 # 占い結果と霊媒結果の設定
 scoreboard players set @s uranai_result 0
 scoreboard players set @s reibai_result 0
+
+# 村人の役職能力
+function villager:start

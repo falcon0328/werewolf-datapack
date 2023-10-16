@@ -1,0 +1,2 @@
+# 役職本の配布
+give @s minecraft:written_book{author:"",title: "役職本",pages:['[{"text":"役職：","bold":true},{"text":"村人","color":"green"},{"text":"\\n"},{"text":"説明："},{"text":"善良な一般人として村の敵を見つけ出し、排除しましょう。"}]'],HideFlags:32,villager_book:true}
