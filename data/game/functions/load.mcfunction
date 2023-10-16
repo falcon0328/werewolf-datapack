@@ -20,4 +20,4 @@ gamerule doInsomnia false
 gamerule mobGriefing false
 
 # 前回のゲームの情報が残っていることがあるためリセットを行う
-function game:reset
+function game:stop
