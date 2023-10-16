@@ -1,0 +1,5 @@
+execute if score @s role_id matches 0 run title @s actionbar [{"text":"あなたの役職："},{"text":"村人","color": "green","bold": true}]
+execute if score @s role_id matches 1 run title @s actionbar [{"text":"あなたの役職："},{"text":"人狼","color": "red","bold": true}]
+execute if score @s role_id matches 2 run title @s actionbar [{"text":"あなたの役職："},{"text":"占い師","color": "green","bold": true}]
+execute if score @s role_id matches 3 run title @s actionbar [{"text":"あなたの役職："},{"text":"狂人","color": "red","bold": true}]
+execute if score @s role_id matches 4 run title @s actionbar [{"text":"あなたの役職："},{"text":"霊媒師","color": "green","bold": true}]

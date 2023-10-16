@@ -1,2 +1,2 @@
 # プレイヤーのtick共通処理
-title @a actionbar "現在の役職："
+execute as @e[scores={id=0..}] run function players:exec
