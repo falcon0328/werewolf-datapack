@@ -1,0 +1,1 @@
+title @s actionbar [{"text":"あなたの役職："},{"text":"狂人","color": "red","bold": true}]

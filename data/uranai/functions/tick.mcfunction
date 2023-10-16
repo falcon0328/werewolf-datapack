@@ -1,0 +1,1 @@
+title @s actionbar [{"text":"あなたの役職："},{"text":"占い師","color": "green","bold": true}]
