@@ -1,5 +1,10 @@
 # マイクラ人狼RPG ゲーム開始スクリプト 
 
+# ゲーム情報を管理するテーブルを用意する
+scoreboard objectives add game_info dummy "ゲーム情報"
+# ゲームを開始したことを記録する
+scoreboard players set is_start game_info 1
+
 # プレイヤーID・役職の割当を行う
 function players:assign
 function roles:assign
