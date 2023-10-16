@@ -1,3 +1,6 @@
+# ゲーム設定変更
+gamemode adventure @s
+
 # 各エンティティにIDを割り当てる
 
 # 自身にIDを設定する

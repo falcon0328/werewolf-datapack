@@ -1,5 +1,10 @@
 # マイクラ人狼RPG起動時スクリプト 
 
+# アドベンチャーモードに変更する
+gamemode adventure
+
+# コマンドの出力を停止する
+gamerule sendCommandFeedback false
 # コマンドブロックの出力を停止する
 gamerule commandBlockOutput false
 # 死亡ログの出力を停止する
@@ -18,6 +23,9 @@ gamerule doMobSpawning false
 gamerule doInsomnia false
 # クリーパーやガスト等のMobがブロックに変更を加えられないようにする
 gamerule mobGriefing false
+# 進捗達成の報告をされないようにする
+gamerule announceAdvancements false
+
 
 # 前回のゲームの情報が残っていることがあるためリセットを行う
 function game:stop
