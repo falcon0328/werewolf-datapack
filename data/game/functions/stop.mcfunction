@@ -20,6 +20,7 @@ scoreboard objectives remove reibai_result
 scoreboard objectives remove game_info
 scoreboard objectives remove id
 scoreboard objectives remove role_id
+scoreboard objectives remove uranai_id
 
 # ボスバーを削除する
 bossbar remove day_timer_bossbar

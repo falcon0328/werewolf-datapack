@@ -1,5 +1,7 @@
 # 占い師の役職設定時の関数
 
-# 占い師のIDを別変数で記録する
-execute store result score uranai_id game_info run scoreboard players get @s id
+# 占いに使う各ユーザIDを用意する
+scoreboard objectives add uranai_id dummy
+scoreboard players set uranai_targets game_info 0
+execute as @e[scores={id=0..}] run execute unless score @s role_id matches 2 run function uranai:assign_uranai_id
 
