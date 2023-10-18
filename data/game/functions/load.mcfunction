@@ -27,5 +27,8 @@ gamerule mobGriefing false
 gamerule announceAdvancements false
 
 
+# 各プレイヤーの持ち物を消去する
+# ただし、基本的にはゲーム実行中にリロードするパターンを除き持ち物を持っている状態でこのコードが呼ばれることはない想定
+clear @a
 # 前回のゲームの情報が残っていることがあるためリセットを行う
 function game:stop
