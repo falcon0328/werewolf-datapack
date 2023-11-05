@@ -1,10 +1,9 @@
 # 占いを行うスクリプト
-# 対象はuranai_id = 0のプレイヤー
 
 # 人狼陣営かどうかの確認
-execute if score @e[scores={uranai_id=1},limit=1] uranai_result matches 1 run tellraw @s [{"selector":"@e[scores={uranai_id=1},limit=1]"},{"text": " は "},{"text":"人狼です","color": "dark_red", "bold": true}]
+$execute if score @e[scores={uranai_id=$(uranai_id)},limit=1] uranai_result matches 1 run tellraw @s [{"selector":"@e[scores={uranai_id=$(uranai_id)},limit=1]"},{"text": " は "},{"text":"人狼です","color": "dark_red", "bold": true}]
 # 人狼陣営以外かどうかの確認
-execute unless score @e[scores={uranai_id=1},limit=1] uranai_result matches 1 run tellraw @s [{"selector":"@e[scores={uranai_id=1},limit=1]"},{"text": " は "},{"text":"人狼ではないようだ", "bold": true}]
+$execute unless score @e[scores={uranai_id=$(uranai_id)},limit=1] uranai_result matches 1 run tellraw @s [{"selector":"@e[scores={uranai_id=$(uranai_id)},limit=1]"},{"text": " は "},{"text":"人狼ではないようだ", "bold": true}]
 
 # 占い本の削除
 clear @s minecraft:written_book{uranai_book: true}
