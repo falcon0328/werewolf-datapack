@@ -19,3 +19,6 @@ scoreboard objectives add day_timer_count dummy
 scoreboard players set @e[type=minecraft:armor_stand,nbt={Tags: ["game_manager"]},limit=1] day_timer_count 600
 scoreboard objectives add is_end_day_timer dummy
 scoreboard players set @e[type=minecraft:armor_stand,nbt={Tags: ["game_manager"]},limit=1] is_end_day_timer 0
+
+# 全プレイヤーの昼タイマーを実行させる
+function players:day_start
