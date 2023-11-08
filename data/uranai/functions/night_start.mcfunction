@@ -1,0 +1,1 @@
+function uranai:give_new_uranai_book

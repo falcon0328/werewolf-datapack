@@ -1,4 +1,8 @@
 # 役職本の配布
+
+# 占いに関する役職本は事前に削除しておく
+clear @s written_book{uranai_book: true}
+
 # 参加人数によって実行するスクリプトが違うのでその対応を行う
 execute if score players game_info matches 4 run function uranai:give_new_uranai_book_4
 execute if score players game_info matches 5 run function uranai:give_new_uranai_book_5

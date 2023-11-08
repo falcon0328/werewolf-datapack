@@ -1,8 +1,5 @@
 # 占い師の役職設定時の関数
 
-# 占いに関する役職本は事前に削除しておく
-clear @s written_book{uranai_book: true}
-
 # 占いに使う各ユーザIDを用意する
 scoreboard objectives add uranai_id dummy
 scoreboard players set uranai_targets game_info 0
